@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --brand-primary: #FF6B00;
+    --brand-primary-hover: #E05300;
+    --brand-surface: #FFF8F3;
+  }
+
+  body {
+    @apply bg-surface-50 text-surface-900 font-sans antialiased selection:bg-brand-500 selection:text-white;
+  }
+}
+
+/* Custom modern scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fed7aa;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #fb923c;
+}
+
+/* Smooth orange glows & backdrop effects */
+.glow-brand {
+  box-shadow: 0 10px 30px -5px rgba(255, 107, 0, 0.25);
+}
+
+.glow-brand-lg {
+  box-shadow: 0 20px 45px -10px rgba(255, 107, 0, 0.35);
+}
+
+.brand-gradient {
+  background: linear-gradient(135deg, #FF7A00 0%, #FF5500 100%);
+}
+
+.brand-gradient-subtle {
+  background: linear-gradient(180deg, #FFF8F3 0%, #FFFFFF 100%);
+}
+
+.telegram-bubble-in {
+  background: #FFFFFF;
+  border-radius: 14px 14px 14px 2px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+.telegram-bubble-out {
+  background: #FFF2E8;
+  border-radius: 14px 14px 2px 14px;
+  box-shadow: 0 1px 3px rgba(255,107,0,0.12);
+}
